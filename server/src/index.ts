@@ -1,9 +1,8 @@
 import http from 'http';
 import { WebSocket, WebSocketServer } from 'ws'
 import { fetchAllStatuses } from './services/polling';
-import { timeStamp } from 'console';
 
-const port = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8080;
 const server = http.createServer((_req, res) => {
     res.writeHead(200);
     res.end("Websocket server is running");
@@ -33,6 +32,6 @@ setInterval(async () => {
     console.log("Broadcasted new status update.");
 }, 10000);
 
-server.listen(port, () => {
-    console.log(`Server running on http://localhost:${port}`);
+server.listen(PORT, () => {
+    console.log(`Server running on http://localhost:${PORT}`);
 });
