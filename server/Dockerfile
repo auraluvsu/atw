@@ -1,22 +1,19 @@
-# Use Node LTS
+# Use Node.js base image
 FROM node:18
 
-# Create app directory
+# Set working directory
 WORKDIR /app
 
 # Copy package.json and install dependencies
 COPY package*.json ./
 RUN npm install
 
-# Copy source
+# Copy the rest of the code
 COPY . .
 
-# Build if you're using tsc (optional)
-# RUN npm run build
-
-# Run with ts-node (you can change this to node dist/index.js if compiled)
+# Run with ts-node
 CMD ["npx", "ts-node", "src/index.ts"]
 
-# Expose port
+# Port (used by Railway)
 EXPOSE 8080
 
