@@ -21,11 +21,11 @@ export async function fetchAllStatuses(): Promise<RegionStatus[]> {
             const url = `${base}${region}.upscope.io/status?stats=1`;
             const res = await axios.get(url, { timeout: 5000 });
             return { region, data: res.data };
-        } catch(e) {
-            if (e instanceof Error) {
-                console.error(`Failed to fetch ${region}:`, e.message);
+        } catch(err) {
+            if (err instanceof Error) {
+                console.error(`Failed to fetch ${region}:`, err.message);
             } else {
-                console.error(`Failed to fetch ${region}:`, e);
+                console.error(`Failed to fetch ${region}:`, err);
             }
             return { region, data: null };
         }
