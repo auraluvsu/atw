@@ -18,14 +18,8 @@ export default function StatusCard({ region, data}: Props) {
     const stats = data.results?.stats || {};
     const server = stats.server || {};
     return (
-        <div style={{
-            border: '1px solid #ccc',
-            borderRadius: '8px',
-            padding: '1rem',
-            margin: '1rem 0',
-            backgroundColor: '#f9f9f9'
-        }}>
-            <h3>{region.toUpperCase()} ({data.status})</h3>
+        <div className="status-card online">
+        <h3>{region.toUpperCase()} ({data.status})</h3>
             <p><strong>Version:</strong> {data.version}</p>
             <h4>Services</h4>
             <ul>

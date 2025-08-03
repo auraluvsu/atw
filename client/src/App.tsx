@@ -26,9 +26,9 @@ function App() {
             <h1>Real-Time Devops Dashboard</h1>
 
             {!statusData ? (
-                <p>Loading Server data...</p>
+                <p style={{ textAlign: 'center' }}>Loading Server data...</p>
             ) : (
-                <div>
+                <div className='dashboard'>
                     {statusData.statuses.map((status) => (
                         <StatusCard
                         key={status.region}
