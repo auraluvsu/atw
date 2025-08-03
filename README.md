@@ -34,8 +34,8 @@ The frontend displays the data in a way that's useful for DevOps teams.
 
 ## 🌍 Live Demo
 
-> 🔗 **Frontend:** [https://atw-kappa.vercel.app/](https://atw-kappa.vercel.app/)  
-> 🔗 **Backend:** [https://your-backend-url.fly.dev](https://your-backend-url.fly.dev)
+> 🔗 **Frontend:** [https://around-the-world-gilt.vercel.app/](https://around-the-world-gilt.vercel.app/)  
+> 🔗 **Backend:** [https://atw-production.up.railway.app/](https://atw-production.up.railway.app/)
 
 _(Replace with your actual deployed URLs)_
 
