@@ -1,5 +1,5 @@
 import { useState, useEffect} from 'react'
-import { WSMessage } from './types'
+import type { WSMessage } from './types'
 import StatusCard from './components/StatusCard'
 import './App.css'
 
