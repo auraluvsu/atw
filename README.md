@@ -1,6 +1,10 @@
 # Real-Time DevOps Dashboard (WebSocket Project)
 
-This project provides a real-time DevOps dashboard using WebSockets. It consists of a Node.js (TypeScript) backend and a React (TypeScript) frontend. The backend periodically polls regional server health endpoints and broadcasts the latest data to connected clients. The frontend displays the data in a way that's useful for DevOps teams.
+This project provides a real-time DevOps dashboard using WebSockets.
+It consists of a Node.js (TypeScript) backend and a React (TypeScript) frontend. 
+The backend periodically polls regional server health endpoints 
+and broadcasts the latest data to connected clients. 
+The frontend displays the data in a way that's useful for DevOps teams.
 
 ---
 
@@ -13,7 +17,7 @@ This project provides a real-time DevOps dashboard using WebSockets. It consists
 
 ### Frontend
 - React + TypeScript
-- (add Tailwind/Chakra/etc. here if used)
+- TailwindCSS
 
 ---
 
@@ -30,7 +34,7 @@ This project provides a real-time DevOps dashboard using WebSockets. It consists
 
 ## 🌍 Live Demo
 
-> 🔗 **Frontend:** [https://your-frontend-url.vercel.app](https://your-frontend-url.vercel.app)  
+> 🔗 **Frontend:** [https://atw-kappa.vercel.app/](https://atw-kappa.vercel.app/)  
 > 🔗 **Backend:** [https://your-backend-url.fly.dev](https://your-backend-url.fly.dev)
 
 _(Replace with your actual deployed URLs)_
@@ -45,4 +49,3 @@ _(Replace with your actual deployed URLs)_
 cd server
 npm install
 npm run dev
-
