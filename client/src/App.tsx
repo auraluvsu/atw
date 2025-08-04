@@ -22,23 +22,32 @@ function App() {
     }, []);
     
     return (
-        <div>
-            <h1>Real-Time Devops Dashboard</h1>
+        <>
+            <div className='background'>
+                <div className='wave'/>
+                <div className='wave'/>
+                <div className='wave'/>
+            </div>
+            <header>
+                <h1>Real-Time Devops Dashboard</h1>
+            </header>
 
-            {!statusData ? (
-                <p style={{ textAlign: 'center' }}>Loading Server data...</p>
-            ) : (
-                <div className='dashboard'>
-                    {statusData.statuses.map((status) => (
-                        <StatusCard
-                        key={status.region}
-                        region={status.region}
-                        data={status.data}
-                        />
-                     ))}
-                </div>
-            )}
-        </div>
+            <div className='dashboard-container'>
+                {!statusData ? (
+                    <p style={{ textAlign: 'center' }}>Loading Server data...</p>
+                ) : (
+                    <div className='dashboard'>
+                        {statusData.statuses.map((status) => (
+                            <StatusCard
+                            key={status.region}
+                            region={status.region}
+                            data={status.data}
+                            />
+                         ))}
+                    </div>
+                )}
+            </div>
+        </>
     );
 }
 
