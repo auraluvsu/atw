@@ -23,11 +23,6 @@ function App() {
     
     return (
         <>
-            <div className='background'>
-                <div className='wave'/>
-                <div className='wave'/>
-                <div className='wave'/>
-            </div>
             <header>
                 <h1>Real-Time Devops Dashboard</h1>
             </header>
