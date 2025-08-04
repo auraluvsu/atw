@@ -1,4 +1,4 @@
-# Real-Time DevOps Dashboard (WebSocket Project)
+# Around The World
 
 This project provides a real-time DevOps dashboard using WebSockets.
 It consists of a Node.js (TypeScript) backend and a React (TypeScript) frontend. 
@@ -8,7 +8,7 @@ The frontend displays the data in a way that's useful for DevOps teams.
 
 ---
 
-## 📦 Tech Stack
+## Tech Stack
 
 ### Backend
 - Node.js + TypeScript
@@ -21,7 +21,7 @@ The frontend displays the data in a way that's useful for DevOps teams.
 
 ---
 
-## 📡 Features
+## Features
 
 - Polls server status from six different regions
 - Broadcasts updates to all connected clients via WebSocket
@@ -37,11 +37,9 @@ The frontend displays the data in a way that's useful for DevOps teams.
 > 🔗 **Frontend:** [https://around-the-world-gilt.vercel.app/](https://around-the-world-gilt.vercel.app/)  
 > 🔗 **Backend:** [https://atw-production.up.railway.app/](https://atw-production.up.railway.app/)
 
-_(Replace with your actual deployed URLs)_
-
 ---
 
-## 🚀 Getting Started (Dev Mode)
+## Getting Started (Dev Mode)
 
 ### Backend
 
