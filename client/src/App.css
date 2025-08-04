@@ -72,6 +72,7 @@ header h1 {
 /* Dashboard centering */
 .dashboard-container {
   display: flex;
+  backgrounda: rgba(0,0,0,0.3);
   flex-direction: column;
   align-items: center;
   justify-content: start;
@@ -79,7 +80,9 @@ header h1 {
   padding: 1rem;
 }
 .dashboard {
+  
   display: grid;
+  colur: black;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
   width: 100%;
